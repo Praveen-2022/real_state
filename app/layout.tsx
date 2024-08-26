@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+          {/* <FaSquareWhatsapp className="h-10 w-10 text-green-700 z-20 " /> */}
+        <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <WhatsAppButton/>
+        <Footer />
+      </body>
     </html>
   );
 }
