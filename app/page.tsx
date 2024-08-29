@@ -3,39 +3,13 @@ import Image from "next/image";
 
 import { IoLocationOutline } from "react-icons/io5";
 import { BiBed, BiBath, BiArea } from "react-icons/bi";
+import Carousel from "@/components/Carousel";
 export default function Home() {
   return (
     <>
-      {/* <header className="w-full min-h-screen overflow-hidden bg-image bg-black">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-10">
-          <div className="border-2 border-green-600 text-white">
-            <h1>Welcome to Divya Shakti</h1>
-            <h1>Manage Your Property</h1>
-            <p>You will have everything nearby D-mart  supermarket,buses, stations,cinemas,theatres,the friendly neighbourhood etc.</p>
-         <h1>Our Locations :</h1>
-          </div>
-
-          <div className="">
-            <Image
-              // fill
-              src="/test2.jpeg"
-              alt="header image"
-              width={750}
-              height={500}
-              className="rounded-3xl"
-            />
-          </div>
-        </div>
-      </header> */}
-      <header className="relative bg-[url('/test3.jpg')] bg-cover bg-center h-screen">
-  {/* Overlay for opacity */}
-  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  {/* Content inside the header */}
-  <div className="relative z-10 flex items-center justify-center h-full">
-    <h1 className="text-white text-4xl font-bold">Your Header Content</h1>
-  </div>
-</header>
-
+<main className="">
+  <Carousel/>
+</main>
 
       <section className="bg-slate-50 pt-10">
         <h1 className="text-center text-3xl font-semibold">
@@ -345,3 +319,34 @@ export default function Home() {
     </>
   );
 }
+
+
+      /* <header className="w-full min-h-screen overflow-hidden bg-image bg-black">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-10">
+          <div className="border-2 border-green-600 text-white">
+            <h1>Welcome to Divya Shakti</h1>
+            <h1>Manage Your Property</h1>
+            <p>You will have everything nearby D-mart  supermarket,buses, stations,cinemas,theatres,the friendly neighbourhood etc.</p>
+         <h1>Our Locations :</h1>
+          </div>
+
+          <div className="">
+            <Image
+              // fill
+              src="/test2.jpeg"
+              alt="header image"
+              width={750}
+              height={500}
+              className="rounded-3xl"
+            />
+          </div>
+        </div>
+      </header> */
+      // <header className="relative bg-[url('/test3.jpg')] bg-cover bg-center h-screen">
+  /* Overlay for opacity */
+  // <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+  /* Content inside the header */
+  // <div className="relative z-10 flex items-center justify-center h-full">
+    // <h1 className="text-white text-4xl font-bold">Your Header Content</h1>
+  // </div>
+// </header>
