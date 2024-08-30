@@ -7,11 +7,11 @@ import Carousel from "@/components/Carousel";
 export default function Home() {
   return (
     <>
-<main className="">
-  <Carousel/>
-</main>
+      <main className="">
+        <Carousel />
+      </main>
 
-      <section className="bg-slate-50 pt-10">
+      {/* <section className="bg-slate-50 pt-10">
         <h1 className="text-center text-3xl font-semibold">
           Featured Properties
         </h1>
@@ -250,103 +250,128 @@ export default function Home() {
             </svg>
           </button>
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-slate-50 pt-10">
-        <h1 className="text-center text-3xl font-semibold">
-          Find Properties in These Cities
-        </h1>
-        <p className="text-center">Lorem ipsum dolor sit amet.</p>
-        <div className="px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 pt-4">
-          <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl w-full h-96 max-w-sm">
+      <section className="container mx-auto p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Child Div 1 */}
+          <div className="bg-white p-4 rounded-lg shadow-md">
             <Image
-              src="/2.jpg"
+              src="/path/to/image1.jpg" // Replace with your image path
+              alt="Image 1"
               width={400}
-              height={400}
-              alt="University of Southern California"
-              className="absolute inset-0 h-96 w-full object-cover"
+              height={250}
+              className="rounded-t-lg object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <div className="z-10 pl-6 pb-6">
-              <h3 className="text-3xl font-bold text-white">Paris</h3>
-              <p className="text-sm leading-6 text-gray-300">City of love</p>
-            </div>
+            <h2 className="text-xl font-semibold mt-4">Clear Land Title</h2>
+            <p className="mt-2 text-gray-600">
+              Rest assured with Keshavam Infra's clear property titles, ensuring
+              transparency and peace of mind for our customers. Each project is
+              legally vetted and complies with all regulatory requirements,
+              guaranteeing a secure investment in your dream home or commercial
+              property.
+            </p>
           </div>
-          <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl w-full h-96 max-w-sm">
+
+          {/* Child Div 2 */}
+          <div className="bg-white p-4 rounded-lg shadow-md">
             <Image
-              src="/2.jpg"
+              src="/path/to/image2.jpg" // Replace with your image path
+              alt="Image 2"
               width={400}
-              height={400}
-              alt="University of Southern California"
-              className="absolute inset-0 h-96 w-full object-cover"
+              height={250}
+              className="rounded-t-lg object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <div className="z-10 pl-6 pb-6">
-              <h3 className="text-3xl font-bold text-white">Paris</h3>
-              <p className="text-sm leading-6 text-gray-300">City of love</p>
-            </div>
+            <h2 className="text-xl font-semibold mt-4">Top-Notch Amenities</h2>
+            <p className="mt-2 text-gray-600">
+              At Keshavam Infra, we prioritize your comfort with a range of
+              top-notch amenities, including 24/7 security, landscaped gardens,
+              clubhouse facilities, and modern infrastructure. Enjoy a seamless
+              blend of convenience and luxury in every aspect of our projects.
+            </p>
           </div>
-          <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl w-full h-96 max-w-sm">
+
+          {/* Child Div 3 */}
+          <div className="bg-white p-4 rounded-lg shadow-md">
             <Image
-              src="/2.jpg"
+              src="/path/to/image3.jpg" // Replace with your image path
+              alt="Image 3"
               width={400}
-              height={400}
-              alt="University of Southern California"
-              className="absolute inset-0 h-96 w-full object-cover"
+              height={250}
+              className="rounded-t-lg object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <div className="z-10 pl-6 pb-6">
-              <h3 className="text-3xl font-bold text-white">Paris</h3>
-              <p className="text-sm leading-6 text-gray-300">City of love</p>
-            </div>
-          </div>
-          <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl w-full h-96 max-w-sm">
-            <Image
-              src="/2.jpg"
-              width={400}
-              height={400}
-              alt="University of Southern California"
-              className="absolute inset-0 h-96 w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <div className="z-10 pl-6 pb-6">
-              <h3 className="text-3xl font-bold text-white">Paris</h3>
-              <p className="text-sm leading-6 text-gray-300">City of love</p>
-            </div>
+            <h2 className="text-xl font-semibold mt-4">Premium Living</h2>
+            <p className="mt-2 text-gray-600">
+              Experience premium living with Keshavam Infra, where luxury meets
+              comfort in meticulously crafted residential townships and gated
+              communities. Our developments offer spacious layouts, elegant
+              designs, and a serene environment for a sophisticated lifestyle.
+            </p>
           </div>
         </div>
       </section>
+
+      <section className="flex flex-col items-center">
+        <h1 className="text-center">Our Distinguished Projects</h1>
+        <div className="container mx-auto p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Child Div 1 */}
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/1.jpg" // Replace with your image path
+                alt="Image 1"
+                width={400}
+                height={250}
+                className="rounded-lg object-cover mx-auto"
+              />
+              <h2 className="text-xl font-semibold mt-4">
+                Divya Shakti Nagari
+              </h2>
+              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                More Details
+              </button>
+            </div>
+
+            {/* Child Div 2 */}
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/1.jpg" // Replace with your image path
+                alt="Image 2"
+                width={400}
+                height={250}
+                className="rounded-lg object-cover mx-auto"
+              />
+              <h2 className="text-xl font-semibold mt-4">
+                Divya Shakti Garden
+              </h2>
+              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                More Details
+              </button>
+            </div>
+
+            {/* Child Div 3 */}
+            <div className="bg-white p-4 rounded-lg shadow-md text-center">
+              <Image
+                src="/1.jpg" // Replace with your image path
+                alt="Image 3"
+                width={400}
+                height={250}
+                className="rounded-lg object-cover mx-auto"
+              />
+              <h2 className="text-xl font-semibold mt-4">
+                Divya Shakti Township
+              </h2>
+              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                More Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button className="border">See All Projects</button>
+        </div>
+      </section>
+
     </>
   );
 }
-
-
-      /* <header className="w-full min-h-screen overflow-hidden bg-image bg-black">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-10">
-          <div className="border-2 border-green-600 text-white">
-            <h1>Welcome to Divya Shakti</h1>
-            <h1>Manage Your Property</h1>
-            <p>You will have everything nearby D-mart  supermarket,buses, stations,cinemas,theatres,the friendly neighbourhood etc.</p>
-         <h1>Our Locations :</h1>
-          </div>
-
-          <div className="">
-            <Image
-              // fill
-              src="/test2.jpeg"
-              alt="header image"
-              width={750}
-              height={500}
-              className="rounded-3xl"
-            />
-          </div>
-        </div>
-      </header> */
-      // <header className="relative bg-[url('/test3.jpg')] bg-cover bg-center h-screen">
-  /* Overlay for opacity */
-  // <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  /* Content inside the header */
-  // <div className="relative z-10 flex items-center justify-center h-full">
-    // <h1 className="text-white text-4xl font-bold">Your Header Content</h1>
-  // </div>
-// </header>

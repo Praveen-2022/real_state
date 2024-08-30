@@ -26,23 +26,23 @@ const Footer = () => {
               us on social media.
             </p>
             <div className="flex mt-4 space-x-4 justify-center lg:justify-start sm:mt-0 ">
-            <div className="flex space-x-4">
-      <Link href="https://www.facebook.com" passHref>
-        <div className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg transition-all cursor-pointer">
-          <FaFacebook size={24} />
-        </div>
-      </Link>
-      <Link href="https://www.x.com" passHref>
-        <div className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-950 hover:shadow-lg transition-all cursor-pointer">
-          <FaXTwitter size={24} />
-        </div>
-      </Link>
-      <Link href="https://www.instagram.com" passHref>
-        <div className="p-2 rounded-full bg-pink-500 text-white hover:bg-pink-600 hover:shadow-lg transition-all cursor-pointer">
-          <FaInstagram size={24} />
-        </div>
-      </Link>
-    </div>
+              <div className="flex space-x-4">
+                <Link href="https://www.facebook.com" passHref>
+                  <div className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg transition-all cursor-pointer">
+                    <FaFacebook size={24} />
+                  </div>
+                </Link>
+                <Link href="https://www.x.com" passHref>
+                  <div className="p-2 rounded-full bg-gray-800 text-white hover:bg-gray-950 hover:shadow-lg transition-all cursor-pointer">
+                    <FaXTwitter size={24} />
+                  </div>
+                </Link>
+                <Link href="https://www.instagram.com" passHref>
+                  <div className="p-2 rounded-full bg-pink-500 text-white hover:bg-pink-600 hover:shadow-lg transition-all cursor-pointer">
+                    <FaInstagram size={24} />
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
           {/* <!--End Col--> */}
@@ -95,23 +95,42 @@ const Footer = () => {
             </ul>
           </div>
           {/* <!--End Col--> */}
-          <div className="w-full text-center lg:w-auto lg:text-left col-span-full sm:col-span-4 md:col-span-4 lg:col-span-2 ">
-            <h4 className="text-lg text-center text-gray-900 font-medium mb-7 lg:text-left">
-              Newsletter
-            </h4>
-            <div className="flex flex-col items-center lg:items-start">
-              <input
-                type="text"
-                className="w-full h-12 border border-gray-300 rounded-full py-2.5 px-5 shadow-sm text-gray-800 mb-5 text-center lg:text-left placeholder:text-gray-400 focus:outline-none focus:border-gray-500"
-                placeholder="Your email here.."
-              />
-              <button
-                type="submit"
-                className="h-11 py-3 px-6 bg-indigo-600 transition-all duration-500 shadow-md rounded-full text-sm text-white font-semibold w-fit hover:bg-indigo-700"
-              >
-                Subscribe
-              </button>
-            </div>
+          <div className="w-full text-center lg:w-auto lg:text-left col-span-full sm:order-last sm:col-span-4 md:col-span-4 lg:order-none lg:col-span-1">
+            <h4 className="text-lg text-gray-900 font-medium mb-7">Products</h4>
+            <ul className="text-gray-600 transition-all duration-500  ">
+              <li className="mb-6">
+                <a
+                  href="javascript:;"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="mb-6">
+                <a
+                  href="javascript:;"
+                  className=" text-gray-600 hover:text-gray-900"
+                >
+                  About
+                </a>
+              </li>
+              <li className="mb-6">
+                <a
+                  href="javascript:;"
+                  className=" text-gray-600 hover:text-gray-900"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li className="sm:mb-6">
+                <a
+                  href="javascript:;"
+                  className=" text-gray-600 hover:text-gray-900"
+                >
+                  Features
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         {/* <!--Grid--> */}
