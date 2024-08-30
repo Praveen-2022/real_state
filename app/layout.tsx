@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {Montserrat} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { FaSquareWhatsapp } from "react-icons/fa6";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const inter = Inter({ subsets: ["latin"] });
+const monsterrat = Montserrat({ subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+ });
 
 export const metadata: Metadata = {
   title: "RealState",
@@ -20,8 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-          {/* <FaSquareWhatsapp className="h-10 w-10 text-green-700 z-20 " /> */}
+      <body className={monsterrat.className}>
         <Navbar />
         {children}
         <WhatsAppButton/>

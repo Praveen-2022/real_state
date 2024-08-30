@@ -30,7 +30,7 @@ export default function Navbar() {
     <header
       className={clsx(
         "fixed top-0 w-full z-30 transition-colors duration-300",
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-[#fcfeff] shadow-lg" : "bg-transparent"
       )}
     >
       <nav
@@ -68,19 +68,19 @@ export default function Navbar() {
         <PopoverGroup
           className={clsx(
             "hidden lg:flex lg:gap-x-12",
-            isScrolled ? "text-black" : "text-white"
+            isScrolled ? "text-[#353535]" : "text-white"
           )}
         >
-          <Link href="/" className="text-sm font-semibold leading-6">
+          <Link href="/" className="text-base font-semibold tracking-wider">
             Home
           </Link>
-          <Link href="/about" className="text-sm font-semibold leading-6">
+          <Link href="/about" className="text-base font-semibold tracking-wider">
             About Us
           </Link>
-          <Link href="/properties" className="text-sm font-semibold leading-6">
+          <Link href="/properties" className="text-base font-semibold tracking-wider">
             Properties
           </Link>
-          <Link href="contact" className="text-sm font-semibold leading-6">
+          <Link href="contact" className="text-base font-semibold tracking-wider">
             Contact Us
           </Link>
         </PopoverGroup>

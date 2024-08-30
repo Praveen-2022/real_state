@@ -1,17 +1,182 @@
 // eslint-disable-next-line @next/next/no-img-element
 import Image from "next/image";
-
-import { IoLocationOutline } from "react-icons/io5";
-import { BiBed, BiBath, BiArea } from "react-icons/bi";
 import Carousel from "@/components/Carousel";
+import NumberTicker from "@/components/magicui/number-ticker";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
       <main className="">
         <Carousel />
       </main>
+      <div className="bg-[#ffffff]">
+        {/* about */}
+        <section className="container mx-auto p-4">
+          <div></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
+            <div className="flex flex-col items-center justify-center border shadow-lg rounded-lg bg-[#fffffc] py-6">
+              <h1 className="text-center text-6xl font-semibold tracking-tighter text-slate-800">
+                <NumberTicker value={150} className="text-slate-800" />+
+              </h1>
+              <p className="text-center tracking-wider font-bold text-xl py-2 text-slate-900">
+                Acres of Land Development
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center border shadow-lg rounded-lg bg-[#fffffc]">
+              <h1 className="text-center text-6xl font-semibold tracking-tighter text-slate-800">
+                <NumberTicker value={5} className="text-slate-800" />Mn+
+              </h1>
+              <p className="text-center tracking-wider font-bold text-xl text-slate-900 py-2">
+              Sq Ft of Development
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center border shadow-lg rounded-lg bg-[#fffffc]">
+              <h1 className="text-center text-6xl font-semibold tracking-tighter text-slate-800 dark:text-white">
+                <NumberTicker value={1500} className="text-slate-800" />+
+              </h1>
+              <p className="text-center tracking-wider font-bold text-lg text-slate-900 py-2">
+               Happy Families
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* about */}
+        <section className="container mx-auto p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Child Div 1 */}
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <Image
+                src="/path/to/image1.jpg" // Replace with your image path
+                alt="Image 1"
+                width={400}
+                height={250}
+                className="rounded-t-lg object-cover"
+              />
+              <h2 className="text-xl font-bold mt-4 text-slate-900">Clear Land Title</h2>
+              <p className="mt-2 text-slate-800 font-semibold tracking-wide">
+                Rest assured with Divya Ssakti Realtors clear property titles,
+                ensuring transparency and peace of mind for our customers. Each
+                project is legally vetted and complies with all regulatory
+                requirements, guaranteeing a secure investment in your dream
+                home or commercial property.
+              </p>
+            </div>
 
-      {/* <section className="bg-slate-50 pt-10">
+            {/* Child Div 2 */}
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <Image
+                src="/path/to/image2.jpg" // Replace with your image path
+                alt="Image 2"
+                width={400}
+                height={250}
+                className="rounded-t-lg object-cover"
+              />
+              <h2 className="text-xl font-bold mt-4 text-slate-900">
+                Top-Notch Amenities
+              </h2>
+              <p className="mt-2 text-slate-800 font-semibold tracking-wide">
+                At Keshavam Infra, we prioritize your comfort with a range of
+                top-notch amenities, including 24/7 security, landscaped
+                gardens, clubhouse facilities, and modern infrastructure. Enjoy
+                a seamless blend of convenience and luxury in every aspect of
+                our projects.
+              </p>
+            </div>
+
+            {/* Child Div 3 */}
+            <div className="bg-white p-4 rounded-lg shadow-lg">
+              <Image
+                src="/path/to/image3.jpg" // Replace with your image path
+                alt="Image 3"
+                width={400}
+                height={250}
+                className="rounded-t-lg object-cover"
+              />
+              <h2 className="text-xl font-bold mt-4 text-slate-900">Premium Living</h2>
+              <p className="mt-2 text-slate-800 font-semibold tracking-wide">
+                Experience premium living with Keshavam Infra, where luxury
+                meets comfort in meticulously crafted residential townships and
+                gated communities. Our developments offer spacious layouts,
+                elegant designs, and a serene environment for a sophisticated
+                lifestyle.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center">
+          <h1 className="text-center font-semibold text-4xl">Our Distinguished Projects</h1>
+          <div className="container mx-auto p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Child Div 1 */}
+              <div className="bg-white p-4 rounded-lg shadow-md text-center">
+                <Image
+                  src="/1.jpg" // Replace with your image path
+                  alt="Image 1"
+                  width={400}
+                  height={250}
+                  className="rounded-lg object-cover mx-auto"
+                />
+                <h2 className="text-xl font-semibold mt-4">
+                  Divya Shakti Nagari
+                </h2>
+                <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                  More Details
+                </button>
+              </div>
+
+              {/* Child Div 2 */}
+              <div className="bg-white p-4 rounded-lg shadow-md text-center">
+                <Image
+                  src="/1.jpg" // Replace with your image path
+                  alt="Image 2"
+                  width={400}
+                  height={250}
+                  className="rounded-lg object-cover mx-auto"
+                />
+                <h2 className="text-xl font-semibold mt-4">
+                  Divya Shakti Garden
+                </h2>
+                <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                  More Details
+                </button>
+              </div>
+
+              {/* Child Div 3 */}
+              <div className="bg-white p-4 rounded-lg shadow-md text-center">
+                <Image
+                  src="/1.jpg" // Replace with your image path
+                  alt="Image 3"
+                  width={400}
+                  height={250}
+                  className="rounded-lg object-cover mx-auto"
+                />
+                <h2 className="text-xl font-semibold mt-4">
+                  Divya Shakti Township
+                </h2>
+                <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+                  More Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <Link
+              className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+              href="/properties"
+            >
+              See All Properties
+            </Link>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+}
+
+{
+  /* <section className="bg-slate-50 pt-10">
         <h1 className="text-center text-3xl font-semibold">
           Featured Properties
         </h1>
@@ -250,128 +415,5 @@ export default function Home() {
             </svg>
           </button>
         </div>
-      </section> */}
-
-      <section className="container mx-auto p-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Child Div 1 */}
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <Image
-              src="/path/to/image1.jpg" // Replace with your image path
-              alt="Image 1"
-              width={400}
-              height={250}
-              className="rounded-t-lg object-cover"
-            />
-            <h2 className="text-xl font-semibold mt-4">Clear Land Title</h2>
-            <p className="mt-2 text-gray-600">
-              Rest assured with Keshavam Infra's clear property titles, ensuring
-              transparency and peace of mind for our customers. Each project is
-              legally vetted and complies with all regulatory requirements,
-              guaranteeing a secure investment in your dream home or commercial
-              property.
-            </p>
-          </div>
-
-          {/* Child Div 2 */}
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <Image
-              src="/path/to/image2.jpg" // Replace with your image path
-              alt="Image 2"
-              width={400}
-              height={250}
-              className="rounded-t-lg object-cover"
-            />
-            <h2 className="text-xl font-semibold mt-4">Top-Notch Amenities</h2>
-            <p className="mt-2 text-gray-600">
-              At Keshavam Infra, we prioritize your comfort with a range of
-              top-notch amenities, including 24/7 security, landscaped gardens,
-              clubhouse facilities, and modern infrastructure. Enjoy a seamless
-              blend of convenience and luxury in every aspect of our projects.
-            </p>
-          </div>
-
-          {/* Child Div 3 */}
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <Image
-              src="/path/to/image3.jpg" // Replace with your image path
-              alt="Image 3"
-              width={400}
-              height={250}
-              className="rounded-t-lg object-cover"
-            />
-            <h2 className="text-xl font-semibold mt-4">Premium Living</h2>
-            <p className="mt-2 text-gray-600">
-              Experience premium living with Keshavam Infra, where luxury meets
-              comfort in meticulously crafted residential townships and gated
-              communities. Our developments offer spacious layouts, elegant
-              designs, and a serene environment for a sophisticated lifestyle.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center">
-        <h1 className="text-center">Our Distinguished Projects</h1>
-        <div className="container mx-auto p-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Child Div 1 */}
-            <div className="bg-white p-4 rounded-lg shadow-md text-center">
-              <Image
-                src="/1.jpg" // Replace with your image path
-                alt="Image 1"
-                width={400}
-                height={250}
-                className="rounded-lg object-cover mx-auto"
-              />
-              <h2 className="text-xl font-semibold mt-4">
-                Divya Shakti Nagari
-              </h2>
-              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-                More Details
-              </button>
-            </div>
-
-            {/* Child Div 2 */}
-            <div className="bg-white p-4 rounded-lg shadow-md text-center">
-              <Image
-                src="/1.jpg" // Replace with your image path
-                alt="Image 2"
-                width={400}
-                height={250}
-                className="rounded-lg object-cover mx-auto"
-              />
-              <h2 className="text-xl font-semibold mt-4">
-                Divya Shakti Garden
-              </h2>
-              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-                More Details
-              </button>
-            </div>
-
-            {/* Child Div 3 */}
-            <div className="bg-white p-4 rounded-lg shadow-md text-center">
-              <Image
-                src="/1.jpg" // Replace with your image path
-                alt="Image 3"
-                width={400}
-                height={250}
-                className="rounded-lg object-cover mx-auto"
-              />
-              <h2 className="text-xl font-semibold mt-4">
-                Divya Shakti Township
-              </h2>
-              <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-                More Details
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <button className="border">See All Projects</button>
-        </div>
-      </section>
-
-    </>
-  );
+      </section> */
 }
