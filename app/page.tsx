@@ -3,12 +3,19 @@ import Image from "next/image";
 import Carousel from "@/components/Carousel";
 import NumberTicker from "@/components/magicui/number-ticker";
 import Link from "next/link";
+import Head from "next/head";
+import RandomImage from "@/components/randomImage";
+import PopupForm from "@/components/PopupForm";
 
 export default function Home() {
   return (
     <>
-      <main className="">
-        <Carousel />
+    <div>
+      <PopupForm/>
+    </div>
+      <main  className="">
+        {/* <Carousel /> */}
+        <RandomImage/>
       </main>
       <div className="bg-[#ffffff]">
         {/* about */}
@@ -25,10 +32,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center border shadow-lg rounded-lg bg-[#fffffc]">
               <h1 className="text-center text-6xl font-semibold tracking-tighter text-slate-800">
-                <NumberTicker value={5} className="text-slate-800" />Mn+
+                <NumberTicker value={5} className="text-slate-800" />
+                Mn+
               </h1>
               <p className="text-center tracking-wider font-bold text-xl text-slate-900 py-2">
-              Sq Ft of Development
+                Sq Ft of Development
               </p>
             </div>
             <div className="flex flex-col items-center justify-center border shadow-lg rounded-lg bg-[#fffffc]">
@@ -36,12 +44,22 @@ export default function Home() {
                 <NumberTicker value={1500} className="text-slate-800" />+
               </h1>
               <p className="text-center tracking-wider font-bold text-lg text-slate-900 py-2">
-               Happy Families
+                Happy Families
               </p>
             </div>
           </div>
         </section>
         {/* about */}
+
+        {/* <div>
+          <main className="flex flex-col items-center justify-center min-h-screen p-4">
+            <h1 className="text-4xl font-bold mb-4">
+              Welcome to the Random Image Page!
+            </h1>
+            <RandomImage />
+          </main>
+        </div> */}
+
         <section className="container mx-auto p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Child Div 1 */}
@@ -53,7 +71,9 @@ export default function Home() {
                 height={250}
                 className="rounded-t-lg object-cover"
               />
-              <h2 className="text-xl font-bold mt-4 text-slate-900">Clear Land Title</h2>
+              <h2 className="text-xl font-bold mt-4 text-slate-900">
+                Clear Land Title
+              </h2>
               <p className="mt-2 text-slate-800 font-semibold tracking-wide">
                 Rest assured with Divya Ssakti Realtors clear property titles,
                 ensuring transparency and peace of mind for our customers. Each
@@ -93,7 +113,9 @@ export default function Home() {
                 height={250}
                 className="rounded-t-lg object-cover"
               />
-              <h2 className="text-xl font-bold mt-4 text-slate-900">Premium Living</h2>
+              <h2 className="text-xl font-bold mt-4 text-slate-900">
+                Premium Living
+              </h2>
               <p className="mt-2 text-slate-800 font-semibold tracking-wide">
                 Experience premium living with Keshavam Infra, where luxury
                 meets comfort in meticulously crafted residential townships and
@@ -106,7 +128,9 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col items-center m-6">
-          <h1 className="text-center font-semibold text-4xl text-slate-800">Our Distinguished Projects</h1>
+          <h1 className="text-center font-semibold text-4xl text-slate-800">
+            Our On-Going Projects
+          </h1>
           <div className="container mx-auto p-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Child Div 1 */}
@@ -122,11 +146,11 @@ export default function Home() {
                   Divya Shakti Nagari
                 </h2>
                 <Link
-              className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              href="/properties"
-            >
-              More Details
-            </Link>
+                  className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                  href="/properties"
+                >
+                  More Details
+                </Link>
               </div>
 
               {/* Child Div 2 */}
@@ -142,11 +166,11 @@ export default function Home() {
                   Divya Shakti Garden
                 </h2>
                 <Link
-              className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              href="/properties"
-            >
-              More Details
-            </Link>
+                  className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                  href="/properties"
+                >
+                  More Details
+                </Link>
               </div>
 
               {/* Child Div 3 */}
@@ -162,11 +186,11 @@ export default function Home() {
                   Divya Shakti Township
                 </h2>
                 <Link
-              className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-              href="/properties"
-            >
-              More Details
-            </Link>
+                  className="px-6 py-2 min-w-[120px] text-center text-white bg-violet-600 border border-violet-600 rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                  href="/properties"
+                >
+                  More Details
+                </Link>
               </div>
             </div>
           </div>
