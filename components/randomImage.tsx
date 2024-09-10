@@ -3,9 +3,9 @@ import Image from 'next/image';
 import React from 'react';
 
 const images = [
-  '/header/01.jpg',
-  '/header/02.jpg',
-  '/header/03.jpg',
+  '/header/07.jpg',
+  '/header/06.jpg',
+  '/header/05.jpg',
   // Add more images as needed
 ];
 
@@ -40,14 +40,14 @@ const RandomImage = () => {
         height={2000} // High resolution
         quality={100} // Highest quality for the image
         priority // Load with high priority for faster rendering
-        className="object-cover w-full h-full"
+        className="object-cover w-full h-full zoom-in-out"
       />
       
       {/* Dark overlay only on image */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
 
       {/* Text over the image */}
-      <div className="absolute z-10 text-white text-xl md:text-3xl font-bold text-center px-4">
+      <div className="absolute z-10 text-white text-xl md:text-3xl font-bold text-end px-4">
         {content.text}
       </div>
     </>
