@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import {Montserrat} from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const monsterrat = Montserrat({ subsets: ["latin"],
+const monsterrat = Montserrat({
+  subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
- });
+});
 
 export const metadata: Metadata = {
   title: "Divya SSkhakti Realtors",
@@ -24,7 +25,7 @@ export default function RootLayout({
       <body className={monsterrat.className}>
         <Navbar />
         {children}
-        <WhatsAppButton/>
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

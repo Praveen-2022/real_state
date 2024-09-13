@@ -16,8 +16,13 @@ const About = () => {
       </div>
       <div className="sm:flex items-center max-w-screen-xl">
         <div className="sm:w-1/2 p-10">
-          <div className="image object-center text-center">
-            <img src="https://i.imgur.com/WbQnbas.png" />
+          <div className="image object-center flex justify-center items-center">
+            <Image 
+            src="/Divya Shakti.png" 
+            alt="Divya Shakti"
+            width={400}
+            height={400}
+            />
           </div>
         </div>
         <div className="sm:w-1/2 p-5">
@@ -28,7 +33,7 @@ const About = () => {
             <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
               DIVYA <span className="text-indigo-600">Sshakti Realtors</span>
             </h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-lg tracking-wide">
               With over 7 years of experience in the real estate market, Divya
               Sshakti Realtor stands out as a trusted name in Nallasopara and
               Umroli East. Our dedicated team has successfully helped over 100

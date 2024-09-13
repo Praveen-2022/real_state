@@ -1,44 +1,56 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BsBuildings } from "react-icons/bs";
-import { IoBedOutline, IoLocationOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
 
 interface SectionProps {
   imageSrc: string;
   heading: string;
   text1: string;
+  location: string;
   reverse?: boolean;
+  href:string;
 }
 
 const sections: SectionProps[] = [
   {
     imageSrc: "/header/06.jpg",
-    heading: "Divya Shakti Nagari",
+    heading: "Parasnath Nagri",
+    location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
+    href: "/properties/parasnath-nagri",
   },
   {
-    imageSrc: "/header/06.jpg",
-    heading: "Divya Shakti Township",
+    imageSrc: "/header/05.jpg",
+    heading: "Parasnath Township",
+    location: "Panchali Boisar(W), Palghar",
     text1: "Subject to inventory availability*",
     reverse: true,
+    href: "/properties/parasnath-township",
   },
   {
-    imageSrc: "/header/06.jpg",
-    heading: "Divya Shakti Garden",
+    imageSrc: "/header/01.jpg",
+    heading: "Parasnath Garden",
+    location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
+    href: "/properties/parasnath-garden",
   },
   {
     imageSrc: "/header/06.jpg",
-    heading: "Divya Shakti Corner",
+    heading: "Parasnath Corner",
+    location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
     reverse: true,
+    href: "/properties/parasnath-corner",
   },
 ];
+
 
 const Section: React.FC<SectionProps> = ({
   imageSrc,
   heading,
   text1,
+  location,
+  href,
   reverse = false,
 }) => {
   return (
@@ -62,41 +74,23 @@ const Section: React.FC<SectionProps> = ({
         <h2 className="text-xl md:text-2xl font-bold text-center mb-2">
           {heading}
         </h2>
-        <p className="text-sm md:text-base text-center mb-4">{text1}</p>
+        <p className="text-sm text-center mb-1">{text1}</p>
 
         {/* Info Div */}
-        <div className="flex w-full justify-around h-auto my-6">
-          {/* Project Size */}
-          <div className="flex items-center">
-            <BsBuildings className="w-10 h-10 md:w-14 md:h-14 text-blue-800" />
-            <div className="ml-2">
-              <p className="font-semibold text-base md:text-lg">50 Acres</p>
-              <p className="text-xs md:text-sm">Project Size</p>
-            </div>
-          </div>
-
-          {/* Bedrooms */}
-          <div className="flex items-center">
-            <IoBedOutline className="w-10 h-10 md:w-14 md:h-14 text-blue-800" />
-            <div className="ml-2">
-              <p className="font-semibold text-base md:text-lg">3-5 BHK</p>
-              <p className="text-xs md:text-sm">Bedrooms</p>
-            </div>
-          </div>
-
+        <div className="flex w-full justify-center h-auto my-3">
           {/* Location */}
           <div className="flex items-center">
-            <IoLocationOutline className="w-10 h-10 md:w-14 md:h-14 text-blue-800" />
+            <IoLocationOutline className="w-10 h-10 md:w-12 md:h-12 text-gray-800" />
             <div className="ml-2">
-              <p className="font-semibold text-base md:text-lg">Mumbai</p>
+              <p className="font-semibold text-base md:text-lg">{location}</p>
               <p className="text-xs md:text-sm">Location</p>
             </div>
           </div>
         </div>
 
-        <Link href="/properties/1">
+        <Link href={href}>
           <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
-            Read More
+            More Details
           </button>
         </Link>
       </div>
