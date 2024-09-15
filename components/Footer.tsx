@@ -7,26 +7,22 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="w-full bg-white">
-      <div className="border-2"></div>
+      <div className="border mx-2"></div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Grid */}
         <div className="grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Logo Section */}
           <div className="mb-6 lg:mb-0">
-            <Link href="/" className="flex justify-center lg:justify-start">
+            <Link href="/" className="flex justify-center">
               <Image
-                src="/logo.png"
-                width={40}
-                height={40}
+                src="/Divya Shakti.png"
+                width={150}
+                height={150}
                 alt="Divya Sshakti Realtors"
                 priority // Logo loads with priority
               />
             </Link>
-            <p className="py-4 text-gray-500 lg:max-w-xs text-center lg:text-left">
-              Trusted in more than 100 countries & 5 million customers. Follow
-              us on social media.
-            </p>
-            <div className="flex mt-4 space-x-4 justify-center lg:justify-start">
+            <div className="flex mt-4 space-x-4 justify-center">
               {/* Social Media Icons */}
               <Link href="https://www.facebook.com" aria-label="Facebook">
                 <div className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-all cursor-pointer">

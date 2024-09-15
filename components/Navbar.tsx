@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="bg-white sticky top-0 z-50 shadow-md">
+    <header className="bg-white sticky  top-0 z-50 shadow-md">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -20,7 +20,13 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/" className="flex lg:flex-1">
           <span className="sr-only">Your Company</span>
-          <Image src="/logos/mark.svg" alt="Logo" width={32} height={32} />
+          <Image
+            src="/Navlogo.png"
+            alt="Logo"
+            width={500}
+            height={500}
+            className="h-8 md:h-11 w-auto"
+          />
         </Link>
 
         {/* Mobile Menu for small screens */}
@@ -43,7 +49,10 @@ const Navbar: React.FC = () => {
 
         {/* WhatsApp button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/login" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            href="/login"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             WhatsApp <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>

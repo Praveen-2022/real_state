@@ -36,11 +36,12 @@ const MobileMenu: React.FC = () => {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Your Company</span>
-              <Image 
-                src="/logos/mark.svg"
-                alt="Logo" 
-                width={32} 
-                height={32}
+              <Image
+                src="/Navlogo.png"
+                alt="Divya Sshakti Realtors"
+                width={500}
+                height={500}
+                className="h-8 w-auto"
               />
             </Link>
             <button
