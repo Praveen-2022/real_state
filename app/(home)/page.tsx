@@ -135,7 +135,7 @@ export default function Home() {
             {/* Child Div 3 */}
             <div className="bg-white p-4 rounded-lg shadow-lg">
               <Image
-                src="/header/nagri.jpg" // Replace with your image path
+                src="/header/nagari.jpg" // Replace with your image path
                 alt="Image 3"
                 width={400}
                 height={250}
@@ -164,7 +164,7 @@ export default function Home() {
               {/* Child Div 1 */}
               <div className="bg-white p-3 rounded-lg shadow-md text-center w-full h-80">
                 <Image
-                  src="/header/nagri.jpg" // Replace with your image path
+                  src="/header/nagari.jpg" // Replace with your image path
                   alt="Image 1"
                   width={400}
                   height={250}

@@ -5,7 +5,7 @@ import React from 'react';
 const images = [
   '/header/corner.jpg',
   '/header/garden.jpg',
-  '/header/nagri.jpg',
+  '/header/nagari.jpg',
   '/header/township.jpg',
 ];
 
@@ -21,7 +21,7 @@ const texts = [
     description: 'Vasai(W), Mumbai | Starting from 15 lakh* | 2BHK & 3BHK',
   },
   {
-    title: 'Parasnath Nagri',
+    title: 'Parasnath Nagari',
     subtitle: 'Affordable Housing',
     description: 'Boisar, Palghar | Starting from 10 lakh* | 1BHK & SHOPS',
   },

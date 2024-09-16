@@ -5,16 +5,17 @@ import { AiOutlineTool } from "react-icons/ai";
 
 import { LuBoxSelect } from "react-icons/lu";
 import Interior from "@/components/interior";
+import QueryForm from "@/components/QueryForm";
 
 const ProjectOne = () => {
   return (
     <>
       <div className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden flex items-center justify-center">
         <Image
-          src="/header/05.jpg"
+          src="/header/township.jpg"
           alt="Static Image"
           width={2000}
-          height={2000} 
+          height={2000}
           quality={100}
           priority
           className="object-cover w-full h-full"
@@ -28,8 +29,19 @@ const ProjectOne = () => {
           Parasnath Township
         </div>
       </div>
-
-      <h1 className="text-center">Hello praveen</h1>
+      <div className="my-6">
+        <h1 className="text-center font-bold text-xl text-gray-700">
+          Welcome to Parasnath Township
+        </h1>
+        <h1 className="text-center text-gray-600 mt-2">
+          Located in Takli, Mihan - 500 meters from Nagpur&apos;s bustling
+          technological hub, Keshavam City 7 offers proximity to major MNCs and
+          prestigious institutions such as TCS, Boeing, AIIMS, Pantanjali, IIM,
+          and Godrej. This prime location has been the cornerstone of our
+          success, with over 60 acres dedicated to multiple projects that have
+          delivered exceptional returns to our clients.
+        </h1>
+      </div>
 
       <div className="grid grid-cols-1 gap-3 mx-4 md:mx-20 lg:mx-28 md:grid-cols-3 my-6">
         <div className="flex border shadow-md flex-col md:flex-row py-3 justify-center items-center rounded">
@@ -83,6 +95,10 @@ const ProjectOne = () => {
 
       <div>
         <Interior />
+      </div>
+
+      <div>
+        <QueryForm/>
       </div>
     </>
   );

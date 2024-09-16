@@ -14,10 +14,10 @@ interface SectionProps {
 const sections: SectionProps[] = [
   {
     imageSrc: "/header/06.jpg",
-    heading: "Parasnath Nagri",
+    heading: "Parasnath Nagari",
     location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
-    href: "/properties/parasnath-nagri",
+    href: "/properties/parasnath-nagari",
   },
   {
     imageSrc: "/header/05.jpg",
