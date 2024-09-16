@@ -10,14 +10,13 @@ const ProjectOne = () => {
   return (
     <>
       <div className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden flex items-center justify-center">
-        {/* High-quality image */}
         <Image
-          src="/header/05.jpg" // Replace with your static image path
+          src="/header/05.jpg"
           alt="Static Image"
-          width={2000} // High resolution
-          height={2000} // High resolution
-          quality={100} // Highest quality for the image
-          priority // Load with high priority for faster rendering
+          width={2000}
+          height={2000} 
+          quality={100}
+          priority
           className="object-cover w-full h-full"
         />
 

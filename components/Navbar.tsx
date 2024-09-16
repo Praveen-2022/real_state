@@ -15,11 +15,11 @@ const Navbar: React.FC = () => {
     <header className="bg-white sticky  top-0 z-50 shadow-md">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6"
       >
         {/* Logo */}
         <Link href="/" className="flex lg:flex-1">
-          <span className="sr-only">Your Company</span>
+          <span className="sr-only">Divya Shakti</span>
           <Image
             src="/Navlogo.png"
             alt="Logo"
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Navigation Links for larger screens */}
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-12 px-0 lg:px-3">
           {navLinks.map((link) => (
             <Link
               key={link.href}

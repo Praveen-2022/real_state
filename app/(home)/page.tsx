@@ -10,12 +10,53 @@ export default function Home() {
       <div>
         <PopupForm />
       </div>
+
       <main className="">
-        {/* <Carousel /> */}
         <RandomImage />
       </main>
+
       <div className="bg-[#ffffff]">
         {/* about */}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl">
+          <div className="p-10">
+            <div className="flex justify-center items-center pt-0 lg:pt-14">
+              <Image
+                src="/Divya Shakti.png"
+                alt="Divya Shakti"
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+          <div className="p-5">
+            <div className="">
+              <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">
+                About us
+              </span>
+              <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
+                DIVYA <span className="text-indigo-600">Sshakti Realtors</span>
+              </h2>
+              <p className="text-gray-700 text-lg tracking-wide">
+                With over 7 years of experience in the real estate market, Divya
+                Sshakti Realtor stands out as a trusted name in Nallasopara and
+                Umroli East. Our dedicated team has successfully helped over 100
+                satisfied customers find their perfect homes, thanks to our deep
+                understanding of the local market and our commitment to
+                exceptional service. We proudly collaborate with Shreenath
+                Enterprises, a leading developer partner, to bring you a wide
+                range of high-quality properties that meet your needs and exceed
+                your expectations. Whether you&apos;re looking for your first
+                home, an investment property, or a new place to settle down, we
+                offer personalized solutions tailored to your unique
+                requirements. Explore our listings and experience the difference
+                that expertise and dedication can make. At Divya Sshakti
+                Realtor, your dream home is just a call away.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <section className="container mx-auto p-4">
           <div></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
@@ -52,11 +93,11 @@ export default function Home() {
             {/* Child Div 1 */}
             <div className="bg-white p-4 rounded-lg shadow-lg">
               <Image
-                src="/path/to/image1.jpg" // Replace with your image path
+                src="/interior/ser3.jpg" // Replace with your image path
                 alt="Image 1"
                 width={400}
                 height={250}
-                className="rounded-t-lg object-cover"
+                className="rounded-t-lg object-cover h-64"
               />
               <h2 className="text-xl font-bold mt-4 text-slate-900">
                 Clear Land Title
@@ -73,17 +114,17 @@ export default function Home() {
             {/* Child Div 2 */}
             <div className="bg-white p-4 rounded-lg shadow-lg">
               <Image
-                src="/path/to/image2.jpg" // Replace with your image path
+                src="/interior/3.jpg" // Replace with your image path
                 alt="Image 2"
                 width={400}
                 height={250}
-                className="rounded-t-lg object-cover"
+                className="rounded-t-lg object-cover h-64"
               />
               <h2 className="text-xl font-bold mt-4 text-slate-900">
                 Top-Notch Amenities
               </h2>
               <p className="mt-2 text-slate-800 font-semibold tracking-wide">
-                At Keshavam Infra, we prioritize your comfort with a range of
+                At Divya Ssakti Realtors, we prioritize your comfort with a range of
                 top-notch amenities, including 24/7 security, landscaped
                 gardens, clubhouse facilities, and modern infrastructure. Enjoy
                 a seamless blend of convenience and luxury in every aspect of
@@ -94,17 +135,17 @@ export default function Home() {
             {/* Child Div 3 */}
             <div className="bg-white p-4 rounded-lg shadow-lg">
               <Image
-                src="/path/to/image3.jpg" // Replace with your image path
+                src="/header/nagri.jpg" // Replace with your image path
                 alt="Image 3"
                 width={400}
                 height={250}
-                className="rounded-t-lg object-cover"
+                className="rounded-t-lg object-cover h-64"
               />
               <h2 className="text-xl font-bold mt-4 text-slate-900">
                 Premium Living
               </h2>
               <p className="mt-2 text-slate-800 font-semibold tracking-wide">
-                Experience premium living with Keshavam Infra, where luxury
+                Experience premium living with Divya Ssakti Realtors, where luxury
                 meets comfort in meticulously crafted residential townships and
                 gated communities. Our developments offer spacious layouts,
                 elegant designs, and a serene environment for a sophisticated

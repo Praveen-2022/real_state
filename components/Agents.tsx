@@ -14,7 +14,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: 'John Doe',
     role: '7510097395',
-    imageUrl: '/header/01.jpg',
+    imageUrl: '/interior/2.jpg',
   },
   {
     id: 2,

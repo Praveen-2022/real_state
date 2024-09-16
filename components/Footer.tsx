@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram,} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white">
+    <footer className="mt-16 w-full bg-white">
       <div className="border mx-2"></div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Grid */}
-        <div className="grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 py-10 sm:grid-cols-3">
           {/* Logo Section */}
           <div className="mb-6 lg:mb-0">
             <Link href="/" className="flex justify-center">
@@ -44,7 +44,9 @@ const Footer = () => {
 
           {/* Get In Touch Section */}
           <div className="text-center sm:text-left">
-            <h4 className="text-lg font-medium text-gray-900 mb-6">Get In Touch</h4>
+            <h4 className="text-lg font-medium text-gray-900 mb-6">
+              Get In Touch
+            </h4>
             <ul className="text-gray-600">
               <li className="mb-4">support@pagedone.com</li>
               <li className="mb-4">+91 945 658 3256</li>
@@ -54,29 +56,21 @@ const Footer = () => {
 
           {/* Products Section 1 */}
           <div className="text-center sm:text-left">
-            <h4 className="text-lg font-medium text-gray-900 mb-6">Products</h4>
+            <h4 className="text-lg font-medium text-gray-900 mb-6">
+              Quick Links
+            </h4>
             <ul className="text-gray-600">
-              {["Home", "About", "Pricing", "Features"].map((item) => (
-                <li key={item} className="mb-4">
-                  <Link href="/" className="hover:text-gray-900">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Products Section 2 */}
-          <div className="text-center sm:text-left">
-            <h4 className="text-lg font-medium text-gray-900 mb-6">More Info</h4>
-            <ul className="text-gray-600">
-              {["Terms", "Privacy", "Cookies"].map((item) => (
-                <li key={item} className="mb-4">
-                  <Link href="/" className="hover:text-gray-900">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li className="mb-4">
+                <Link
+                  href="/properties"
+                  className="hover:text-gray-900 block mb-4"
+                >
+                  Properties
+                </Link>
+                <Link href="/contact" className="hover:text-gray-900 block">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -85,16 +79,13 @@ const Footer = () => {
         <div className="py-6 border-t border-gray-200">
           <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center">
             <span className="text-sm text-gray-500 mb-4 lg:mb-0">
-              © <Link href="https://pagedone.io/">pagedone</Link> 2024, All rights reserved.
+              @ <Link href="http://localhost:3000">Divya Shakti Realtors</Link>
+              2024, All rights reserved.
             </span>
             <ul className="flex items-center space-x-4">
-              {["Terms", "Privacy", "Cookies"].map((item) => (
-                <li key={item}>
-                  <Link href="/" className="text-sm text-gray-500">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <h1 className="text-gray-500">
+                Developed and Maintained By Master_DEV__
+              </h1>
             </ul>
           </div>
         </div>

@@ -52,8 +52,8 @@ const RandomImage = () => {
           <Image
             src={content.image}
             alt="Random"
-            width={2000} // High resolution
-            height={2000} // High resolution
+            width={1500} // High resolution
+            height={1500} // High resolution
             quality={100} // Highest quality for the image
             priority // Load with high priority for faster rendering
             className="object-cover w-full h-full zoom-in-out"
