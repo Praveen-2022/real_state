@@ -13,22 +13,22 @@ const texts = [
   {
     title: 'Parasnath Corner',
     subtitle: 'Eco-luxe Residences',
-    description: 'Umroli(E), Palghar | Starting from 13 lakh | 1RK, 1BHK, 2BHK, & SHOPS',
+    description: 'Umroli(E), Palghar | Starting from 13 lakh* | 1RK, 1BHK, 2BHK, & SHOPS',
   },
   {
     title: 'Parasnath Garden',
     subtitle: 'Luxury Apartments',
-    description: 'Vasai(W), Mumbai | Starting from 15 lakh | 2BHK & 3BHK',
+    description: 'Vasai(W), Mumbai | Starting from 15 lakh* | 2BHK & 3BHK',
   },
   {
     title: 'Parasnath Nagri',
     subtitle: 'Affordable Housing',
-    description: 'Boisar, Palghar | Starting from 10 lakh | 1BHK & SHOPS',
+    description: 'Boisar, Palghar | Starting from 10 lakh* | 1BHK & SHOPS',
   },
   {
     title: 'Parasnath Township',
     subtitle: 'Community Living',
-    description: 'Virar(E), Mumbai | Starting from 18 lakh | 2BHK & 3BHK Villas',
+    description: 'Virar(E), Mumbai | Starting from 18 lakh* | 2BHK & 3BHK Villas',
   },
 ];
 
