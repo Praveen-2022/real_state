@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
     <section className="bg-gray-100">
       <div className="w-full">
         <Image
-          src="/header/05.jpg"
+          src="/header/garden.jpg"
           alt="Contact"
           width={2000}
           height={2000}

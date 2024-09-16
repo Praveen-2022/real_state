@@ -13,14 +13,14 @@ interface SectionProps {
 
 const sections: SectionProps[] = [
   {
-    imageSrc: "/header/06.jpg",
+    imageSrc: "/header/nagari.jpg",
     heading: "Parasnath Nagari",
     location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
     href: "/properties/parasnath-nagari",
   },
   {
-    imageSrc: "/header/05.jpg",
+    imageSrc: "/header/township.jpg",
     heading: "Parasnath Township",
     location: "Panchali Boisar(W), Palghar",
     text1: "Subject to inventory availability*",
@@ -28,14 +28,14 @@ const sections: SectionProps[] = [
     href: "/properties/parasnath-township",
   },
   {
-    imageSrc: "/header/01.jpg",
+    imageSrc: "/header/garden.jpg",
     heading: "Parasnath Garden",
     location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
     href: "/properties/parasnath-garden",
   },
   {
-    imageSrc: "/header/06.jpg",
+    imageSrc: "/header/corner.jpg",
     heading: "Parasnath Corner",
     location: "Umroli(E), Palghar",
     text1: "Subject to inventory availability*",
@@ -104,7 +104,7 @@ const Properties: React.FC = () => {
       {/* Header Image with Overlay */}
       <div className="relative min-w-full h-[60vh] md:h-[80vh]">
         <Image
-          src="/header/04.jpg"
+          src="/header/corner.jpg"
           layout="fill"
           objectFit="cover"
           alt="About"
