@@ -55,7 +55,7 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row w-full h-full border shadow-lg mt-6 ${
+      className={`flex flex-col md:flex-row w-full h-full shadow-lg mt-6 ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
@@ -89,7 +89,7 @@ const Section: React.FC<SectionProps> = ({
         </div>
 
         <Link href={href}>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+          <button className="px-6 py-2 min-w-[120px] text-center text-white bg-blue-600 border border-blue-600 rounded active:text-blue-500 hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
             More Details
           </button>
         </Link>
@@ -102,14 +102,14 @@ const Properties: React.FC = () => {
   return (
     <>
       {/* Header Image with Overlay */}
-      <div className="relative min-w-full h-[60vh] md:h-[80vh]">
+      <div className="relative min-w-full h-[60vh] md:h-[85vh]">
         <Image
-          src="/header/corner.jpg"
+          src="/header/corner2.png"
           layout="fill"
           objectFit="cover"
           alt="About"
         />
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-0"></div>
       </div>
 
       {/* Content Sections */}

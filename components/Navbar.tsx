@@ -12,7 +12,8 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className="bg-white sticky  top-0 z-50 shadow-md">
+<header className="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-sm shadow-md border-b border-white/20">
+
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6"

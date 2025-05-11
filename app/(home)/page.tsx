@@ -4,15 +4,15 @@ import Link from "next/link";
 import RandomImage from "@/components/randomImage";
 import PopupForm from "@/components/PopupForm";
 import { IoLocationOutline } from "react-icons/io5";
+import SwiperCarousel from "@/components/SwiperCarousel";
 export default function Home() {
   return (
     <>
       <div>
         <PopupForm />
       </div>
-
       <main className="">
-        <RandomImage />
+        <SwiperCarousel />
       </main>
 
       <div className="bg-[#ffffff]">
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-center border shadow-lg rounded-lg bg-[#fffffc]">
               <h1 className="text-center text-6xl font-semibold tracking-tighter text-slate-800 dark:text-white">
-                <NumberTicker value={1500} className="text-slate-800" />+
+                <NumberTicker value={250} className="text-slate-800" />+
               </h1>
               <p className="text-center tracking-wider font-bold text-lg text-slate-900 py-2">
                 Happy Families
